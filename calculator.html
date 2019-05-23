@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator </title>
+  <link rel="stylesheet" href="calculator.css">
+
+</head>
+
+<body>
+  <h1>Calculator</h1>
+  <h2>Create a table with 5 rows and 4 coluns. Merge first row cells </h2>
+  <form name="calculator">
+    <table>
+      <tr>
+        <td colspan="4"><input type="text" name="sum" id="box"> </td>
+      </tr>
+      <tr>
+        <td> <input type="button" name="one" value="1" onclick="calculator.sum.value += '1'"></td>
+        <td> <input type="button" name="two" value="2" onclick="calculator.sum.value += '2'"></td>
+        <td><input type="button" name="three" value="3" onclick="calculator.sum.value += '3'"></td>
+        <td><input type="button" class="orange" name="plus" value="+" onclick="calculator.sum.value += '+'"></td>
+      </tr>
+      <tr>
+        <td><input type="button" name="four" value="4" onclick="calculator.sum.value += '4'"></td>
+        <td><input type="button" name="five" value="5" onclick="calculator.sum.value += '5'"></td>
+        <td><input type="button" name="six" value="6" onclick="calculator.sum.value += '6'"></td>
+        <td><input type="button" class="orange" name="minus" value="-" onclick="calculator.sum.value += '-'"></td>
+      </tr>
+      <tr>
+        <td><input type="button" name="seven" value="7" onclick="calculator.sum.value += '7'"></td>
+        <td><input type="button" name="eight" value="8" onclick="calculator.sum.value += '8'"></td>
+        <td><input type="button" name="nine" value="9" onclick="calculator.sum.value += '9'"></td>
+        <td><input type="button" class="orange" name="multiply" value="x" onclick="calculator.sum.value +=  '*' "> </td>
+      </tr>
+      <tr>
+        <td><input type="button" name="c" value="c" class="special" onclick="calculator.sum.value = ' '"></td>
+        <td><input type="button" name="zero" value="0" onclick="calculator.sum.value += '0'"></td>
+        <td><input type="button" name="equal" value="=" onclick="calculator.sum.value = eval(calculator.sum.value)"></td>
+        <td><input type="button" class="orange" name="divide" value="/" onclick="calculator.sum.value += '/'"></td>
+      </tr>
+
+
+    </table>
+  </form>
+</body>
+
+</html>

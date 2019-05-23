@@ -1,0 +1,42 @@
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+table {
+  background-color: black;
+  border: 2px solid orange;
+  padding-bottom: 10px;
+}
+
+input[type="button"] {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 100%;
+}
+
+input[type="button"]:focus {
+  outline: none;
+}
+
+td {
+  text-align: center;
+}
+
+#box {
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+input[type="button"].special {
+  background-color: #777;
+}
+
+input[type="button"].orange {
+  background-color: orange;
+}
